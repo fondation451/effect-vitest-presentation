@@ -1,0 +1,44 @@
+{
+  "name": "effect-vitest-presentation",
+  "author": "Nicolas Assouad",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Example repository to show how to test Effectful code with Vitest",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fondation451/effect-vitest-presentation"
+  },
+  "bugs": {
+    "url": "https://github.com/fondation451/effect-vitest-presentation/issues"
+  },
+  "homepage": "https://github.com/fondation451/effect-vitest-presentation#README",
+  "keywords": [
+    "effect",
+    "ts",
+    "vitest"
+  ],
+  "scripts": {
+    "build": "pnpm install && pnpm compile",
+    "compile": "tsc",
+    "clean": "rimraf -rf ./node_modules",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
+    "quality": "pnpm lint && pnpm build && pnpm test",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "effect": "^3.10.8"
+  },
+  "devDependencies": {
+    "@effect/vitest": "^0.13.8",
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^22.8.6",
+    "eslint": "^9.14.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2",
+    "vitest": "^2.1.4"
+  }
+}
